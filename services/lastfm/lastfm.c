@@ -199,7 +199,12 @@ update (MojitoService *service, GHashTable *params, MojitoServiceDataFunc callba
     mojito_item_take (item, "date", mojito_time_t_to_string (atoi (rest_xml_node_get_attr (date, "uts"))));
 
     s = rest_xml_node_find (node, "realname")->content;
-    if (s) mojito_item_put (item, "author", s);
+    if (s) {
+      mojito_item_put (item, "author", s);
+    } else {
+      mojito_item_put (item, "author", rest_xml_node_find (node, "name")->content);
+    }
+
     mojito_item_put (item, "authorid", rest_xml_node_find (node, "name")->content);
     mojito_item_take (item, "authoricon", get_image (node, "medium"));
 
