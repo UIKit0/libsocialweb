@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-30 14:47+0100\n"
+"POT-Creation-Date: 2009-11-30 17:09+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tomás Galicia <tomas.galicia@intel.com>\n"
 "Language-Team: \n"
@@ -25,7 +26,9 @@ msgstr "Last.fm ist ein Internetradio-Service, der lernt was dir gefällt. Jeder
 msgid "Twitter"
 msgstr "Twitter"
 
-# "Twitter is a social network for friends, family and colleagues, which allows to communicate with one another by frequently sending short messages answering one simple question: What are you doing?"
+# "Twitter is a social network for friends, family and colleagues, which
+# allows to communicate with one another by frequently sending short messages
+# answering one simple question: What are you doing?"
 #: ../services/twitter/twitter.keys.in.h:2
 msgid "Twitter is a service for friends, family, and co–workers to communicate and stay connected through the exchange of quick, frequent answers to one simple question: What are you doing?"
 msgstr "Twitter ist ein soziales Netzwerk für Freunde, Familie und Kollegen, welches es ermöglicht, miteinander zu kommunizieren indem man häufig mit kurzen Nachrichten auf eine einfache Frage antwortet: Was machst du gerade?"
@@ -46,3 +49,19 @@ msgstr "MySpace"
 msgid "MySpace is a leading social portal for connecting people, content, and culture from around the world. Create a profile, share photos, professional and viral videos, blog, instant message your friends, and listen to music on the world’s largest music community."
 msgstr "MySpace ist ein führendes soziales Netzwerk, welches Menschen und Kulturen weltweit miteinander verbindet. Erstelle ein Profil, veröffentliche Fotos, professionelle und virale Videos, schreibe Blog-Einträge, chatte mit deinen Freunden und höre dir Musik in der größten Musikgemeinde der Welt an."
 
+#: ../services/digg/digg.keys.in.h:1
+msgid "Digg"
+msgstr "Digg"
+
+#: ../services/lastfm/lastfm.c:109
+#, c-format
+msgid "%s by %s"
+msgstr "%s für %s"
+
+#: ../services/digg/digg.keys.in.h:2
+msgid "Digg - to share news, video and images"
+msgstr "Digg - Nachrichten, Video und Bilder teilen"
+
+#: ../services/lastfm/lastfm.c:113
+msgid "Unknown"
+msgstr "Unbekannt"
