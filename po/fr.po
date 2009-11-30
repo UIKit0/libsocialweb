@@ -54,10 +54,10 @@ msgstr "Digg"
 msgid "%s by %s"
 msgstr "%s par %s"
 
-#: ../services/digg/digg.keys.in.h:2
-msgid "Digg - to share news, video and images"
-msgstr "Digg - partager des nouvelles, des vidéos et des photos."
-
 #: ../services/lastfm/lastfm.c:113
 msgid "Unknown"
 msgstr "Inconnu"
+
+#: ../services/digg/digg.keys.in.h:2
+msgid "Digg - to share news, video and images"
+msgstr "Digg - partager des nouvelles, des vidéos et des photos"
