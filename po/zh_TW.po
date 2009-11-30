@@ -1,9 +1,9 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-18 15:51+0000\n"
+"POT-Creation-Date: 2009-11-30 17:09+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: \n"
@@ -45,3 +45,19 @@ msgstr "MySpace"
 msgid "MySpace is a leading social portal for connecting people, content, and culture from around the world. Create a profile, share photos, professional and viral videos, blog, instant message your friends, and listen to music on the world’s largest music community."
 msgstr "MySpace 是個用來連繫來自世界各地的人們、內容和文化的領導性社交入口網站。建立個人檔案、分享照片、專業的與散佈性的影片、部落格、發給你朋友即時訊息，以及聆聽全世界最大的音樂社群內的音樂。"
 
+#: ../services/digg/digg.keys.in.h:1
+msgid "Digg"
+msgstr "Digg"
+
+#: ../services/lastfm/lastfm.c:109
+#, c-format
+msgid "%s by %s"
+msgstr "%s  %s"
+
+#: ../services/digg/digg.keys.in.h:2
+msgid "Digg - to share news, video and images"
+msgstr "Digg - 分享新聞，視訊和影像"
+
+#: ../services/lastfm/lastfm.c:113
+msgid "Unknown"
+msgstr "無名"
