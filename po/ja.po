@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-30 14:47+0100\n"
+"POT-Creation-Date: 2009-11-30 17:09+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tomás Galicia <tomas.galicia@intel.com>\n"
 "Language-Team: \n"
@@ -44,3 +45,19 @@ msgstr "MySpace"
 msgid "MySpace is a leading social portal for connecting people, content, and culture from around the world. Create a profile, share photos, professional and viral videos, blog, instant message your friends, and listen to music on the world’s largest music community."
 msgstr "MySpace とは、世界中に存在するさまざまな文化のユーザーと交流できる、極めて人気の高い、ソーシャル・ネットワーク・サイトです。世界で最も会員の多いコミュニティーで、プロフィールの作成や写真の共有、プロ・アマのビデオ、ブログ、チャット、音楽など、さまざまな親交サービスが提供されています。"
 
+#: ../services/digg/digg.keys.in.h:1
+msgid "Digg"
+msgstr "Digg"
+
+#: ../services/lastfm/lastfm.c:109
+#, c-format
+msgid "%s by %s"
+msgstr "%s による %s"
+
+#: ../services/digg/digg.keys.in.h:2
+msgid "Digg - to share news, video and images"
+msgstr "Digg - ニュース、ビデオ、画像を共有"
+
+#: ../services/lastfm/lastfm.c:113
+msgid "Unknown"
+msgstr "不明"
