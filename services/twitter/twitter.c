@@ -24,6 +24,7 @@
 #include <glib/gi18n.h>
 #include <dbus/dbus-glib-lowlevel.h>
 #include <gnome-keyring.h>
+#include <gconf/gconf-client.h>
 
 #include <libsocialweb/sw-item.h>
 #include <libsocialweb/sw-set.h>
@@ -91,8 +92,7 @@ struct _SwServiceTwitterPrivate {
   gboolean geotag_enabled;
 };
 
-static void online_notify (gboolean online, gpointer user_data);
-static void credentials_updated (SwService *service);
+static void refresh_credentials (SwServiceTwitter *twitter);
 
 RestXmlNode *
 node_from_call (RestProxyCall *call)
@@ -354,6 +354,45 @@ online_notify (gboolean online, gpointer user_data)
   }
 }
 
+static gboolean
+migrate_gconf_credentials (const char *service_name, const char *server)
+{
+  GConfClient *gconf;
+  char *path, *username, *password;
+  gboolean migrated = FALSE;
+
+  g_assert (service_name);
+  g_assert (server);
+
+  gconf = gconf_client_get_default ();
+
+  path = g_strdup_printf ("/apps/libsocialweb/services/%s/user", service_name);
+  username = gconf_client_get_string (gconf, path, NULL);
+  g_free (path);
+
+  path = g_strdup_printf ("/apps/libsocialweb/services/%s/password", service_name);
+  password = gconf_client_get_string (gconf, path, NULL);
+  g_free (path);
+
+  if (username && password) {
+    if (gnome_keyring_set_network_password_sync (NULL,
+                                                 username,
+                                                 NULL,
+                                                 server,
+                                                 NULL, NULL, NULL, 0,
+                                                 password,
+                                                 NULL) == GNOME_KEYRING_RESULT_OK) {
+      migrated = TRUE;
+    }
+  }
+
+  g_free (username);
+  g_free (password);
+  g_object_unref (gconf);
+
+  return migrated;
+}
+
 /*
  * Callback from the keyring lookup in refresh_credentials.
  */
@@ -365,6 +404,7 @@ found_password_cb (GnomeKeyringResult  result,
   SwService *service = SW_SERVICE (user_data);
   SwServiceTwitter *twitter = SW_SERVICE_TWITTER (service);
   SwServiceTwitterPrivate *priv = twitter->priv;
+  static gboolean migrated = FALSE;
 
   if (result == GNOME_KEYRING_RESULT_OK && list != NULL) {
     GnomeKeyringNetworkPasswordData *data = list->data;
@@ -381,14 +421,20 @@ found_password_cb (GnomeKeyringResult  result,
       online_notify (TRUE, service);
     }
   } else {
-    g_free (priv->username);
-    g_free (priv->password);
-    priv->username = NULL;
-    priv->password = NULL;
-    priv->credentials = OFFLINE;
+    if (!migrated && migrate_gconf_credentials ("twitter", "api.twitter.com")) {
+      /* If no credentials were found and we haven't tried yet, try migrating
+         credentials from GConf */
+      refresh_credentials (twitter);
+    } else {
+      g_free (priv->username);
+      g_free (priv->password);
+      priv->username = NULL;
+      priv->password = NULL;
+      priv->credentials = OFFLINE;
 
-    if (result != GNOME_KEYRING_RESULT_NO_MATCH) {
-      g_warning (G_STRLOC ": Error getting password: %s", gnome_keyring_result_to_message (result));
+      if (result != GNOME_KEYRING_RESULT_NO_MATCH) {
+        g_warning (G_STRLOC ": Error getting password: %s", gnome_keyring_result_to_message (result));
+      }
     }
   }
 
