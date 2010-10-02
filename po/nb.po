@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-01 15:42+0000\n"
+"PO-Revision-Date: 2010-10-02 16:10+0000\n"
+"Last-Translator: Torgeir I. Hjelmfoss <tih@inbox.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-Language: Norwegian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../services/digg/digg.keys.in.h:1
+msgid "Digg"
+msgstr "Digg"
+
+#: ../services/digg/digg.keys.in.h:2
+msgid "Digg - to share news, video and images"
+msgstr "Digg - del nyheter, video og bilder"
+
+#. Translators "[track title] by [artist]"
+#: ../services/lastfm/lastfm.c:149
+#, c-format
+msgid "%s by %s"
+msgstr "%s av %s"
+
+#: ../services/lastfm/lastfm.c:153
+msgid "Unknown"
+msgstr "Ukjent"
+
+#: ../services/lastfm/lastfm.keys.in.h:1
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../services/lastfm/lastfm.keys.in.h:2
+msgid ""
+"Last.fm is a music service that learns what you love. Every track you play "
+"will tell your Last.fm profile something about what you like. It can connect "
+"you to other people who like what you like - and recommend songs from their "
+"music collections and yours too."
+msgstr "" 
+"Last.fm er en musikktjeneste som lærer seg hva du elsker. Hver sang du spiller "
+"vil si noe til din Last.fm profil om hva du liker. Den kan koble deg til andre personer "
+"som liker det samme som deg - og anbefale låter fra deres musikksamling og din."
+
+#: ../services/twitter/twitter.keys.in.h:1
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../services/twitter/twitter.keys.in.h:2
+msgid ""
+"Twitter is a service for friends, family, and co–workers to communicate and "
+"stay connected through the exchange of quick, frequent answers to one simple "
+"question: What are you doing?"
+msgstr ""
+"Twitter er en tjeneste for venner, familie og kolleger for å kommunisere og"
+"holde kontakten gjennom å utveksle kjappe, hyppige svar til et enkelt "
+"spørsmål: Hva gjør du?"
+
+#: ../services/flickr/flickr.keys.in.h:1
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../services/flickr/flickr.keys.in.h:2
+msgid ""
+"Flickr - almost certainly the best online photo management and sharing "
+"application in the world."
+msgstr ""
+"Flickr - nesten helt sikkert det beste onlineprogrammet for å håndtere "
+"og dele fotografier."
+
+#: ../services/myspace/myspace.keys.in.h:1
+msgid "MySpace"
+msgstr "MySpace"
+
+#: ../services/myspace/myspace.keys.in.h:2
+msgid ""
+"MySpace is a leading social portal for connecting people, content, and "
+"culture from around the world. Create a profile, share photos, professional "
+"and viral videos, blog, instant message your friends, and listen to music on "
+"the world’s largest music community."
+msgstr ""
+"MySpace er en ledende sosial portal for å koble sammen personer, innhold "
+"og kultur fra rundt om i verden. Lag en profil, del fotografier, profesjonelle "
+"og undergrunnsvideoer, blogg, send lynmeldinger til venner, og hør på musikk "
+"i verdens største musikkfellesskap."
