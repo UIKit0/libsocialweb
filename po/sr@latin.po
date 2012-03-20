@@ -1,0 +1,170 @@
+# Serbian translation for libsocialweb.
+# Copyright (C) 2012 libsocialweb's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libsocialweb package.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: libsocialweb\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-12 10:54+0000\n"
+"PO-Revision-Date: 2012-03-20 02:36+0200\n"
+"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../services/facebook/facebook.keys.in.h:1
+msgid "Facebook"
+msgstr "Fejsbuk"
+
+#: ../services/facebook/facebook.keys.in.h:2
+msgid "Facebook helps you connect and share with the people in your life."
+msgstr ""
+"Fejsbuk vam pomaže da se povežete i da razmenjujete sa ljudima iz vašeg "
+"života."
+
+#: ../services/flickr/flickr.keys.in.h:1
+msgid "Flickr"
+msgstr "Flikr"
+
+#: ../services/flickr/flickr.keys.in.h:2
+msgid ""
+"Flickr - almost certainly the best online photo management and sharing "
+"application in the world."
+msgstr ""
+"Flikr — skoro sigurno u svetu najbolji program za deljenje i upravljanje "
+"fotografijama na mreži."
+
+#. Translators "[track title] by [artist]"
+#: ../services/lastfm/lastfm-item-view.c:361
+#, c-format
+msgid "%s by %s"
+msgstr "%s izvodi %s"
+
+#: ../services/lastfm/lastfm-item-view.c:365
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: ../services/lastfm/lastfm.keys.in.h:1
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../services/lastfm/lastfm.keys.in.h:2
+msgid ""
+"Last.fm is a music service that learns what you love. Every track you play "
+"will tell your Last.fm profile something about what you like. It can connect "
+"you to other people who like what you like - and recommend songs from their "
+"music collections and yours too."
+msgstr ""
+"Last.fm je usluga muzike koja uči šta volite. Svaka numera koju pustite će "
+"reći vašem Last.fm profilu nešto o tome što se vama sviđa. Može da vas "
+"poveže sa drugim ljudima koji vole ono što i vi — i da preporuči pesme iz "
+"njihovih zbirki muzike i vaših takođe."
+
+#: ../services/smugmug/smugmug.keys.in.h:1
+msgid "SmugMug"
+msgstr "SmugMug"
+
+#: ../services/smugmug/smugmug.keys.in.h:2
+msgid ""
+"Your Photos Look Better Here. Billions of happy photos. Millions of "
+"passionate customers."
+msgstr ""
+"Vaše fotografije izgledaju bolje ovde. Bilion srećnih fotografija. Milioni "
+"strastvenih potrošača."
+
+#. This format is for tweets announcing twitpic URLs, "[tweet] [url]".
+#: ../services/twitter/twitter.c:830
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../services/twitter/twitter.keys.in.h:1
+msgid "Twitter"
+msgstr "Tviter"
+
+#: ../services/twitter/twitter.keys.in.h:2
+msgid ""
+"Twitter is a service for friends, family, and co–workers to communicate and "
+"stay connected through the exchange of quick, frequent answers to one simple "
+"question: What are you doing?"
+msgstr ""
+"Tviter je usluga u kojoj prijatelji, porodica i saradnici komuniciraju i "
+"ostaju u vezi razmenjujući brze i česte odgovore na jedno jednostavno pitanje: "
+"Šta radite?"
+
+#: ../services/vimeo/vimeo.keys.in.h:1
+msgid ""
+"From the beginning, Vimeo was created by filmmakers and video creators who "
+"wanted to share their creative work, along with intimate personal moments of "
+"their everyday life. As time went on, like-minded people came to the site "
+"and built a community of positive, encouraging individuals with a wide range "
+"of video interests. We hope that you feel inspired to show us both your "
+"creative side as well as your friendly side."
+msgstr ""
+"Od početka, Vimeo su stvorili tvorci filmova i snimaka koji su želeli da "
+"razmenjuju svoj stvaralački rad, sa ličnim trenucima njihovog svakodnevnog "
+"života. Kako je vreme prolazilo, ljudi istog mišljenja su dolazili na sajt i "
+"izgradili zajednicu pozitivnih, ohrabrujućih pojedinaca sa širokim opsegom "
+"video interesovanja. Nadamo se da se osećate podstreknuti da nam pokažete "
+"kako vašu stvaralačku stranu tako i onu prijateljsku."
+
+#: ../services/vimeo/vimeo.keys.in.h:2
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../services/photobucket/photobucket.keys.in.h:1
+msgid "Photobucket"
+msgstr "Fotobuket"
+
+#: ../services/photobucket/photobucket.keys.in.h:2
+msgid ""
+"Snap and show it off! Photobucket makes it easy to share your photos and "
+"videos anywhere."
+msgstr ""
+"Snimite je i prikažite je! Fotobuket olakšava deljenje vaših fotografija i "
+"snimaka bilo gde."
+
+#: ../services/plurk/plurk.keys.in.h:1
+msgid "Plurk"
+msgstr "Plark"
+
+#: ../services/plurk/plurk.keys.in.h:2
+msgid "Plurk is a web site that allows people to share ideas."
+msgstr "Plark je veb sajt koji dopušta ljudima da razmenjuju ideje."
+
+#: ../services/sina/sina.keys.in.h:1
+msgid "Sina"
+msgstr "Sina"
+
+#: ../services/sina/sina.keys.in.h:2
+msgid "Sina microblogging"
+msgstr "Sina mikroblogiranje"
+
+#: ../services/youtube/youtube.keys.in.h:1
+msgid "YouTube"
+msgstr "Jutjub"
+
+#: ../services/youtube/youtube.keys.in.h:2
+msgid "Youtube is a popular video sharing website"
+msgstr "Jutjub je popularan veb sajt za razmenu snimaka"
+
+#: ../services/myspace/myspace.keys.in.h:1
+msgid "MySpace"
+msgstr "MajSpejs"
+
+#: ../services/myspace/myspace.keys.in.h:2
+msgid ""
+"MySpace is a leading social portal for connecting people, content, and "
+"culture from around the world. Create a profile, share photos, professional "
+"and viral videos, blog, instant message your friends, and listen to music on "
+"the world’s largest music community."
+msgstr ""
+"MajSpejs je vodeći društveni portal za povezivanje ljudi, sadržaj, i kulturu "
+"iz celog sveta. Napravite profil, delite fotografije, profesionalne i "
+"tražene snimke, postavljajte, pošaljite trenutnu poruku vašim prijateljeima, i "
+"slušajte muziku na najvećoj svetskoj muzičkoj zajednici."
