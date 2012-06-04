@@ -384,7 +384,7 @@ sw_client_contact_view_class_init (SwClientContactViewClass *klass)
   /**
    * SwClientContactView::contacts-added:
    * @self:
-   * @contacts: (type GLib.List) (element-type Sw.Contact):
+   * @contacts: (type GLib.List) (element-type SocialWebClient.Contact):
    */
   signals[CONTACTS_ADDED_SIGNAL] =
     g_signal_new ("contacts-added",
@@ -401,7 +401,7 @@ sw_client_contact_view_class_init (SwClientContactViewClass *klass)
   /**
    * SwClientContactView::contacts-removed:
    * @self:
-   * @contacts: (type GLib.List) (element-type Sw.Contact):
+   * @contacts: (type GLib.List) (element-type SocialWebClient.Contact):
    */
   signals[CONTACTS_REMOVED_SIGNAL] =
     g_signal_new ("contacts-removed",
@@ -418,7 +418,7 @@ sw_client_contact_view_class_init (SwClientContactViewClass *klass)
   /**
    * SwClientContactView::contacts-changed:
    * @self:
-   * @contacts: (type GLib.List) (element-type Sw.Contact):
+   * @contacts: (type GLib.List) (element-type SocialWebClient.Contact):
    */
   signals[CONTACTS_CHANGED_SIGNAL] =
     g_signal_new ("contacts-changed",

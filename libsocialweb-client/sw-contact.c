@@ -104,7 +104,6 @@ sw_contact_get_value (SwContact  *contact,
 
 /**
  * sw_contact_get_value_all: 
- *
  * @contact: :
  * @key: :
  *

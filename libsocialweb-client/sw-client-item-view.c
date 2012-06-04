@@ -389,7 +389,7 @@ sw_client_item_view_class_init (SwClientItemViewClass *klass)
   /**
    * SwClientItemView::items-added:
    * @self:
-   * @items: (type GLib.List) (element-type Sw.Item):
+   * @items: (type GLib.List) (element-type SocialWebClient.Item):
    */
   signals[ITEMS_ADDED_SIGNAL] =
     g_signal_new ("items-added",
@@ -406,7 +406,7 @@ sw_client_item_view_class_init (SwClientItemViewClass *klass)
   /**
    * SwClientItemView::items-removed:
    * @self:
-   * @items: (type GLib.List) (element-type Sw.Item):
+   * @items: (type GLib.List) (element-type SocialWebClient.Item):
    */
   signals[ITEMS_REMOVED_SIGNAL] =
     g_signal_new ("items-removed",
@@ -423,7 +423,7 @@ sw_client_item_view_class_init (SwClientItemViewClass *klass)
   /**
    * SwClientItemView::items-changed:
    * @self:
-   * @items: (type GLib.List) (element-type Sw.Item):
+   * @items: (type GLib.List) (element-type SocialWebClient.Item):
    */
   signals[ITEMS_CHANGED_SIGNAL] =
     g_signal_new ("items-changed",
