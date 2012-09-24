@@ -1,65 +1,173 @@
 # Translation of libsocialweb to Indonesian.
-# Copyright (C)
-# This file is distributed under the same license as the PACKAGE package.
-# Andika Triwidada <andika@gmail.com>, 2009.
+# Copyright (C) 2009 libsocialweb's copyright holder(s).
+# This file is distributed under the same license as the libsocialweb package.
+# Andika Triwidada <andika@gmail.com>, 2009, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libsocialweb master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-02 17:42+0000\n"
-"PO-Revision-Date: 2009-08-26 00:20+0700\n"
+"POT-Creation-Date: 2011-05-05 19:28+0000\n"
+"PO-Revision-Date: 2012-09-24 13:36+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
-#: ../services/lastfm/lastfm.keys.in.h:1
-msgid "Last.fm"
-msgstr "Last.fm"
+#: ../services/facebook/facebook.keys.in.h:1
+msgid "Facebook"
+msgstr "Facebook"
 
-#: ../services/lastfm/lastfm.keys.in.h:2
-msgid "Last.fm is a music service that learns what you love. Every track you play will tell your Last.fm profile something about what you like. It can connect you to other people who like what you like - and recommend songs from their music collections and yours too."
-msgstr "Last.fm adalah suatu layanan musik yang belajar apa yang anda cintai. Setiap trek yang anda mainkan akan memberi tahu profile Last.fm anda tentang sesuatu yang anda sukai. Ini dapat menghubungkan anda ke orang lain yang menyukai apa yang anda sukai - dan menyarankan lagu-lagu dari koleksi musik mereka ke anda juga."
-
-#: ../services/twitter/twitter.keys.in.h:1
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../services/twitter/twitter.keys.in.h:2
-msgid "Twitter is a service for friends, family, and co–workers to communicate and stay connected through the exchange of quick, frequent answers to one simple question: What are you doing?"
-msgstr "Twitter adalah suatu layanan baru teman-teman, keluarga, dan rekan sejawat untuk berkomunikasi dan tetap tersambung melalui pertukaran dari jawaban cepat dan sering atas satu pertanyaan sederhana: Engkau sedang apa?"
+#: ../services/facebook/facebook.keys.in.h:2
+msgid "Facebook helps you connect and share with the people in your life."
+msgstr ""
+"Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam "
+"kehidupan Anda."
 
 #: ../services/flickr/flickr.keys.in.h:1
 msgid "Flickr"
 msgstr "Flickr"
 
 #: ../services/flickr/flickr.keys.in.h:2
-msgid "Flickr - almost certainly the best online photo management and sharing application in the world."
-msgstr "Flickr - hampir pasti adalah aplikasi online untuk manajemen dan berbagi foto terbaik di dunia."
+msgid ""
+"Flickr - almost certainly the best online photo management and sharing "
+"application in the world."
+msgstr ""
+"Flickr - hampir pasti adalah aplikasi online untuk manajemen dan berbagi "
+"foto terbaik di dunia."
+
+#. Translators "[track title] by [artist]"
+#: ../services/lastfm/lastfm-item-view.c:361
+#, c-format
+msgid "%s by %s"
+msgstr "%s x %s"
+
+#: ../services/lastfm/lastfm-item-view.c:365
+msgid "Unknown"
+msgstr "Tak dikenal"
+
+#: ../services/lastfm/lastfm.keys.in.h:1
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../services/lastfm/lastfm.keys.in.h:2
+msgid ""
+"Last.fm is a music service that learns what you love. Every track you play "
+"will tell your Last.fm profile something about what you like. It can connect "
+"you to other people who like what you like - and recommend songs from their "
+"music collections and yours too."
+msgstr ""
+"Last.fm adalah suatu layanan musik yang belajar apa yang anda cintai. Setiap "
+"trek yang anda mainkan akan memberi tahu profile Last.fm anda tentang "
+"sesuatu yang anda sukai. Ini dapat menghubungkan anda ke orang lain yang "
+"menyukai apa yang anda sukai - dan menyarankan lagu-lagu dari koleksi musik "
+"mereka ke anda juga."
+
+#: ../services/smugmug/smugmug.keys.in.h:1
+msgid "SmugMug"
+msgstr "SmugMug"
+
+#: ../services/smugmug/smugmug.keys.in.h:2
+msgid ""
+"Your Photos Look Better Here. Billions of happy photos. Millions of "
+"passionate customers."
+msgstr ""
+"Foto Anda Nampak Lebih Baik Di Sini. Milyaran foto bahagia. Jutaan pelanggan "
+"yang bersemangat."
+
+#. This format is for tweets announcing twitpic URLs, "[tweet] [url]".
+#: ../services/twitter/twitter.c:829
+#, c-format
+#| msgid "%s by %s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../services/twitter/twitter.keys.in.h:1
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../services/twitter/twitter.keys.in.h:2
+msgid ""
+"Twitter is a service for friends, family, and co–workers to communicate and "
+"stay connected through the exchange of quick, frequent answers to one simple "
+"question: What are you doing?"
+msgstr ""
+"Twitter adalah suatu layanan baru teman-teman, keluarga, dan rekan sejawat "
+"untuk berkomunikasi dan tetap tersambung melalui pertukaran dari jawaban "
+"cepat dan sering atas satu pertanyaan sederhana: Engkau sedang apa?"
+
+#: ../services/vimeo/vimeo.keys.in.h:1
+msgid ""
+"From the beginning, Vimeo was created by filmmakers and video creators who "
+"wanted to share their creative work, along with intimate personal moments of "
+"their everyday life. As time went on, like-minded people came to the site "
+"and built a community of positive, encouraging individuals with a wide range "
+"of video interests. We hope that you feel inspired to show us both your "
+"creative side as well as your friendly side."
+msgstr ""
+"Dari sejak awal, Vimeo dibuat oleh para pembuat film dan para pencipta video "
+"yang ingin berbagi hasil kerja kreatif mereka, bersama dengan momen-momen "
+"pribadi yang intim dari kehidupan sehari-hari mereka. Dengan berjalannya "
+"waktu, orang-orang yang berpikiran serupa datang ke situs dan membangun "
+"suatu komunitas individu yang positif dan membesarkan hati dengan minat "
+"video yang lebar. Kami berharap bahwa Anda merasa terinspirasi untuk "
+"menampilkan kepada kami sisi kreatif Anda maupun sisi bersahabat Anda."
+
+#: ../services/vimeo/vimeo.keys.in.h:2
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../services/photobucket/photobucket.keys.in.h:1
+msgid "Photobucket"
+msgstr "Photobucket"
+
+#: ../services/photobucket/photobucket.keys.in.h:2
+msgid ""
+"Snap and show it off! Photobucket makes it easy to share your photos and "
+"videos anywhere."
+msgstr ""
+"Potret dan pamerkan! Photobucket membuat mudah untuk berbagi foto dan video "
+"Anda dimanapun."
+
+#: ../services/plurk/plurk.keys.in.h:1
+msgid "Plurk"
+msgstr "Plurk"
+
+#: ../services/plurk/plurk.keys.in.h:2
+msgid "Plurk is a web site that allows people to share ideas."
+msgstr "Plurk adalah situs web yang memungkinkan orang berbagi ide."
+
+#: ../services/sina/sina.keys.in.h:1
+msgid "Sina"
+msgstr "Sina"
+
+#: ../services/sina/sina.keys.in.h:2
+msgid "Sina microblogging"
+msgstr "Blog mikro Sina"
+
+#: ../services/youtube/youtube.keys.in.h:1
+msgid "YouTube"
+msgstr "YouTube"
+
+#: ../services/youtube/youtube.keys.in.h:2
+msgid "Youtube is a popular video sharing website"
+msgstr "Youtube adalah situs web untuk berbagi video yang populer"
 
 #: ../services/myspace/myspace.keys.in.h:1
 msgid "MySpace"
 msgstr "MySpace"
 
 #: ../services/myspace/myspace.keys.in.h:2
-msgid "MySpace is a leading social portal for connecting people, content, and culture from around the world. Create a profile, share photos, professional and viral videos, blog, instant message your friends, and listen to music on the world’s largest music community."
-msgstr "MySpace adalah portal sosial terdepan untuk menyambungkan orang, isi, dan kultur dari seluruh dunia. Buat suatu profil, berbagi foto, video profesional dan viral, blog, pesan instan ke teman-teman anda, dan dengarkan musik di komunitas musik terbesar di dunia."
-
-#: ../services/digg/digg.keys.in.h:1
-msgid "Digg"
-msgstr "Digg"
-
-#. Translators "[track title] by [artist]"
-#: ../services/lastfm/lastfm.c:145
-#, c-format
-msgid "%s by %s"
-msgstr "%s x %s"
-
-#: ../services/digg/digg.keys.in.h:2
-msgid "Digg - to share news, video and images"
-msgstr "Digg - untuk berbagi berita, video, dan citra"
-
-#: ../services/lastfm/lastfm.c:149
-msgid "Unknown"
-msgstr "Tak dikenal"
+msgid ""
+"MySpace is a leading social portal for connecting people, content, and "
+"culture from around the world. Create a profile, share photos, professional "
+"and viral videos, blog, instant message your friends, and listen to music on "
+"the world’s largest music community."
+msgstr ""
+"MySpace adalah portal sosial terdepan untuk menyambungkan orang, isi, dan "
+"kultur dari seluruh dunia. Buat suatu profil, berbagi foto, video "
+"profesional dan viral, blog, pesan instan ke teman-teman anda, dan dengarkan "
+"musik di komunitas musik terbesar di dunia."
