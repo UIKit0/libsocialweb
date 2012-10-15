@@ -255,7 +255,7 @@ online_notify (gboolean online, gpointer user_data)
   SW_DEBUG (FLICKR, "Online: %s", online ? "yes" : "no");
 
   if (online) {
-    got_tokens_cb (priv->proxy, TRUE, g_object_ref (service));
+    credentials_updated (service);
   } else {
     priv->authorised = FALSE;
 
