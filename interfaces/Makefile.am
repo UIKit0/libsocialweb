@@ -26,7 +26,7 @@ GINTERFACE_SOURCES = \
 	$(DBUS_SPECS:.xml=-ginterface.h) \
 	$(DBUS_SPECS:.xml=-ginterface.c)
 
-libsocialweb_ginterfaces_la_SOURCES = $(GINTERFACE_SOURCES) $(MARSHALS_SOURCES)
+nodist_libsocialweb_ginterfaces_la_SOURCES = $(GINTERFACE_SOURCES) $(MARSHALS_SOURCES)
 libsocialweb_ginterfaces_la_LIBADD = $(DBUS_GLIB_LIBS) $(GCOV_LIBS)
 libsocialweb_ginterfaces_la_CFLAGS = $(DBUS_GLIB_CFLAGS) $(GCOV_CFLAGS)
 
@@ -46,7 +46,7 @@ libsocialweb_ginterfaces_la_HEADERS = \
 
 BINDINGS_SOURCES = $(DBUS_SPECS:.xml=-bindings.h)
 
-libsocialweb_bindings_la_SOURCES = $(BINDINGS_SOURCES) $(MARSHALS_SOURCES)
+nodist_libsocialweb_bindings_la_SOURCES = $(BINDINGS_SOURCES) $(MARSHALS_SOURCES)
 libsocialweb_bindings_la_LIBADD = $(DBUS_GLIB_LIBS)
 libsocialweb_bindings_la_CFLAGS = $(DBUS_GLIB_CFLAGS)
 

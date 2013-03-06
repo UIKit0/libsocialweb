@@ -7,7 +7,7 @@ lib_LTLIBRARIES = libsocialweb.la
 
 libsocialweb_ladir = $(pkgincludedir)/libsocialweb
 
-libsocialweb_la_CFLAGS = -I$(top_srcdir) -I$(top_srcdir)/interfaces \
+libsocialweb_la_CFLAGS = -I$(top_srcdir) -I$(top_builddir)/interfaces \
 		     $(DBUS_GLIB_CFLAGS) $(SOUP_CFLAGS) $(SOUP_GNOME_CFLAGS) \
 		     $(NM_CFLAGS) $(GTK_CFLAGS) $(REST_CFLAGS) \
 		     $(GMODULE_CFLAGS) $(GCOV_CFLAGS) \
