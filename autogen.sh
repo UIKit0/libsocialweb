@@ -1,5 +1,9 @@
 #!/bin/sh
+
+set -e
+
 mkdir -p m4
-gtkdocize || exit 1
-intltoolize --copy --force --automake || exit 1
-ACLOCAL="${ACLOCAL-aclocal} $ACLOCAL_FLAGS" autoreconf -v -i && ./configure $@
+gtkdocize
+intltoolize --copy --force --automake
+ACLOCAL="${ACLOCAL-aclocal} $ACLOCAL_FLAGS" autoreconf -v -i
+test -n "$NOCONFIGURE" || ./configure $@
