@@ -45,6 +45,9 @@ AM_PATH_GLIB_2_0([2.14.0],
                  [AC_MSG_ERROR([glib-2.0 is required])],
                  [gobject gthread gmodule-no-export])
 
+AC_DEFINE([GLIB_VERSION_MIN_REQUIRED], [GLIB_VERSION_2_26], [Ignore post 2.26 deprecations])
+AC_DEFINE([GLIB_VERSION_MAX_ALLOWED], [GLIB_VERSION_2_26], [Prevent post 2.26 APIs])
+
 AS_ALL_LINGUAS
 IT_PROG_INTLTOOL([0.40], [no-xml])
 GETTEXT_PACKAGE=libsocialweb
