@@ -595,6 +595,7 @@ _upload_file_progress_cb (DBusGProxy *proxy,
                                          closure->userdata,
                                          SW_CLIENT_SERVICE_ERROR,
                                          0,
+					 "%s",
                                          error_message);
     g_object_unref (closure->service);
     g_slice_free (SwClientServiceCallClosure, closure);
@@ -663,6 +664,7 @@ got_file_size_cb (GObject *source_object,
                                          closure->userdata,
                                          SW_CLIENT_SERVICE_ERROR,
                                          0,
+					 "%s",
                                          info ? "File to upload is not a regular file" :
                                          "Could not get file size information for file");
     if (info)
